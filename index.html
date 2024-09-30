@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOCK</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <h1>Current Time</h1>
+    <div id="time"></div>
+    <select id="timezoneSelect">
+        <option value="Asia/Ho_Chi_Minh">Asia/Ho_Chi_Minh</option>
+        <option value="America/New_York">America/New_York</option>
+    </select>
+    
+    <div>
+        <input type="number" id="hours" placeholder="Hours" min="0">
+        <input type="number" id="minutes" placeholder="Minutes" min="0" max="59">
+        <input type="number" id="seconds" placeholder="Seconds" min="0" max="59">
+        <button id="setCountdown">Set Countdown</button>
+    </div>
+    
+    <div id="countdown">Countdown: 0</div>
+    <button id="start">Start Countdown</button>
+    <div id="toast">TIME OUT</div>
+
+    <script src="script.js"></script>
+    
+  
+
+</body>
+</html>
